@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+:root {
+    --green: #00BDAA;
+    --pink: #B33C86;
+    --blue: #1B2C5B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+}
+
+body {
+    background: var(--blue);
+}
+
+nav {
+    margin-top: 2%;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    width: 40%;
+    margin-left: 20%;
+} 
+
+nav a {
+    color: var(--green);
+}
+
+nav a:hover , footer a:hover{
+    border-bottom: 5px solid var(--green);
+    transition: ease-out .1s;
+    -webkit-transition: ease-out .1s;
+    -moz-transition: ease-out .1s;
+    -ms-transition: ease-out .1s;
+    -o-transition: ease-out .1s;
+}
+
+footer a:hover {
+    border-bottom: 5px solid var(--pink);
+}
+
+#shop {
+    font-style: italic;
+    font-weight: 900;
+    color: var(--pink);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.guitarillu {
+    margin-left: 2%;
+}
+
+.guitar {
+    filter: drop-shadow(0px 10px 0px #B33C86);
+    -webkit-filter: drop-shadow(0px 10px 0px #B33C86);
+}
+
+.guitar:nth-of-type(2) {
+    transform: translateY(-50px);
+    animation: mymove 5s infinite;
+}
+
+
+.header article {
+    color: var(--green);
+    align-self: center;
+    width: 45%;
+}
+
+
+article h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.header article p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 60%;
+}
+
+.shop-button {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--blue);
+    font-weight: 900;
+    padding: 3% 5%;
+    margin-top: 10%;
+}
+
+.shop-button:hover {
+    box-shadow: 5px 5px 0px var(--green);
+    font-style: italic;
+}
+
+.shops {
+    background: var(--pink);
+}
+
+h2 {
+    color: var(--blue);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3.125rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+.grid-container {
+    display: grid;
+    gap: 3%;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imgbox {
+    padding: 40% 10%;
+}
+
+.container:nth-of-type(4) , .container:nth-of-type(5) , .container:nth-of-type(6) {
+    padding-bottom: 50%;
+}
+
+.container h3 , .container p {
+    color: var(--blue);
+}
+
+h3 {
+    font-weight: 900;
+}
+
+.box p {
+    font-style: italic;
+    /* padding-bottom: 10%; */
+}
+
+.imgbox {
+    margin-bottom: 3%;
+    transition: ease-out .6s;
+    -webkit-transition: ease-out .6s;
+    -moz-transition: ease-out .6s;
+    -ms-transition: ease-out .6s;
+    -o-transition: ease-out .6s;
+}
+
+.imgbox:hover {
+    opacity: .6;
+    
+}
+
+.millimetric {
+    background: url(../img/millimetrics.jpg) center / cover no-repeat;
+}
+
+.tonfuchs {
+    background: url(../img/tonfuchs3.png) bottom / cover no-repeat;
+}
+
+.vandermeij {
+    background: url(../img/vandermeij.jpg) bottom / cover no-repeat;
+}
+
+.cyanguitars {
+    background: url(../img/cyanguitar.png) bottom / cover no-repeat;
+}
+
+.gamble {
+    background: url(../img/gamble.jpg) bottom / cover no-repeat;
+}
+
+.schwarzcustom {
+    background: url(../img/schwarzcustom.png) bottom / cover no-repeat;
+}
+
+.about h2 , .about h4 {
+    text-transform: uppercase;
+    color: var(--pink);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.about h4 {
+    color: var(--green);
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.about article {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0;
+}
+
+.about iframe {
+    box-shadow: 15px 15px 0px var(--green);
+}
+
+.about div{
+    width: 30%;
+    align-self: center;
+}
+
+.about p {
+    color: var(--pink);
+    font-weight: 700;
+    
+}
+
+.about p::first-line {
+    color: var(--green)
+}
+
+footer {
+    background: var(--green);
+    box-shadow: 10px 10px 0px var(--pink);
+    width: 60%;
+    margin: 5% auto;
+    padding: 2% 1%;
+}
+
+footer a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+
+@keyframes mymove {
+    0% , 100% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+}
+    50% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+
+
+    nav{
+        display: none;
+    }
+
+    .guitarillu {
+        display: none;
+    }
+
+    .header article {
+        width: 90%;
+        text-align: center;
+    }
+
+    .header h1 , .shops h2 , .about h2{
+        font-size: 1.5rem;
+    }
+
+    .header article p {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* .shops {
+        height: 320vh;
+    } */
+   
+    .grid-container {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .container:nth-of-type(4) , .container:nth-of-type(5) , .container:nth-of-type(6) {
+        padding-bottom: 0%;
+    }
+
+    .about article {
+        flex-direction: column;
+    }
+
+    iframe {
+        display: none;
+    
+    }
+
+    .about div{
+        font-size: .8rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about h2 , .about h4 {
+        width: 90%;
+    }
+
+    footer {
+        width: 80%;
+        font-size: .5rem;
+        box-shadow: 5px 5px 0px var(--pink);
+    }
+}
+
